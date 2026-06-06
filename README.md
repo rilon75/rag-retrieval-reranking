@@ -26,6 +26,7 @@ The goal is to explore how modern RAG systems combine chunking, embeddings, vect
 - Added a ColBERT-style re-ranking stage using BERT token embeddings and token-level max-sim interactions.
 - Compared retrieval behavior before and after re-ranking to evaluate ranking improvements.
 - Created a small runnable example demonstrating dense retrieval followed by token-level re-ranking.
+- Added lightweight retrieval evaluation utilities including Precision@K, Recall@K, and Mean Reciprocal Rank.
 
 ## Architecture
 
@@ -61,6 +62,7 @@ rag-retrieval-reranking/
     ├── chunking.py
     ├── retrieval.py
     ├── reranking.py
+    ├── evaluation.py
     └── example.py
 ```
 
@@ -121,6 +123,7 @@ Through this project, I gained hands-on experience with:
 - Applying BERT embeddings for token-level re-ranking.
 - Understanding trade-offs between retrieval speed, ranking quality, and model complexity.
 - Designing components that resemble the retrieval layer of modern RAG systems.
+- Evaluating retrieval quality with ranking metrics such as Precision@K, Recall@K, and Mean Reciprocal Rank.
 
 ## Note
 
